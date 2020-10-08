@@ -19,7 +19,7 @@ The new solution should reduce the cost of managed services.
 * Spark Operator
 
 ## Observations on Industry
-* Companys are using spark on k8s in production: Data Bricks, Data Mechanics 
+* Spark on k8s has been applied in production widely: E.g., Data Bricks, Data Mechanics, Palantir.
 * Hybrid cluster (spark is deployed together with other products) is a bad practice. Spark is usually deployed in a standandalone k8s cluster, serving as a resilient computational cluster
 * Copmanys are moving from EMR to EKS
 * Spark operator over spark submit
@@ -51,5 +51,5 @@ The new solution should reduce the cost of managed services.
 
 ### Design Trade-off 3: File Storage
 
-
+TBD
 
