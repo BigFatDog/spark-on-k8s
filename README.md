@@ -49,10 +49,7 @@ The new solution should reduce the cost of managed services.
 * Spark pods loads Volume and ConfigMap
 * Richer tooling: E.g., SparkCLI 
 
-Spark Submit
+### Design Trade-off 3: File Storage
 
-![Spark Submit](https://spark.apache.org/docs/latest/img/k8s-cluster-mode.png)
 
-Spark Operator
 
-![Spark operator](https://github.com/GoogleCloudPlatform/spark-on-k8s-operator/blob/master/docs/architecture-diagram.png)
