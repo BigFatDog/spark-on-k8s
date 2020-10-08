@@ -43,5 +43,4 @@ The new solution should reduce the cost of managed services.
 ## Design Trade-off 2: Spark Submit vs. Spark Operator
 
 
-![Spark operator]
-(https://github.com/GoogleCloudPlatform/spark-on-k8s-operator/blob/master/docs/architecture-diagram.png)
+![Spark operator](https://github.com/GoogleCloudPlatform/spark-on-k8s-operator/blob/master/docs/architecture-diagram.png)
