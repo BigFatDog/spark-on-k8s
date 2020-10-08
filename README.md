@@ -18,10 +18,15 @@ The new solution should reduce the cost of managed services.
 * Kubernets (>=1.8.1)
 * Spark Operator
 
-## 
+## Observations on Industry
+* Companys are using spark on k8s in production: Data Bricks, Data Mechanics 
+* Hybrid cluster (spark is deployed together with other products) is a bad practice. Spark is usually deployed in a standandalone k8s cluster, serving as a resilient computational cluster
+* Copmanys are moving from EMR to EKS
+* Spark operator over spark submit
+* Palantir's gang scheduling matters
 
 
-## EKS or EMR?
+## Design Trade-off 1: EKS vs. EMR?
 
 ### EMR downside
 * Portability:After running for a while on AWS EMR, you can find yourself tightly coupled to AWS specific features. It can be something simple, like logging and monitoring and it can be more complicated like an auto-scaling mechanism, custom master/worker AMIs, AWS security features, etc
@@ -33,4 +38,8 @@ The new solution should reduce the cost of managed services.
 * Faster startup overhead, since you're deploying containers, not provisioning VMs.
 * Easier and faster to pre-install needed software inside the containers, rather than bootstrap with EMR.
 * More powerful autoscaling in EKS.
+
+
+## Design Trade-off 2: Spark Submit vs. Spark Operator
+
 
