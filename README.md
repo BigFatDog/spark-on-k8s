@@ -42,6 +42,13 @@ The new solution should reduce the cost of managed services.
 
 ## Design Trade-off 2: Spark Submit vs. Spark Operator
 
+### Spark Operator benefits
+* A declartive way to managing spark on k8s 
+* Standard k8s operator implementation
+* Spark Submit as hooks
+* Spark pods loads Volume and ConfigMap
+* Richer tooling: E.g., SparkCLI 
+
 Spark Submit
 
 ![Spark Submit](https://spark.apache.org/docs/latest/img/k8s-cluster-mode.png)
