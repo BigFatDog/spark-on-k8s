@@ -1,5 +1,13 @@
 # spark-on-k8s
 
+## Scenarios
+* Autoscaling spark cluster for long-live jobs (dynamic resource allocation, achieved with Kubernetes Autoscaler)
+* Create & Destroy spark clusters on premise for short batch jobs
+
+## Technology
+* Kubernets (>=1.8.1)
+* Spark Operator
+
 ## Objective
 * Scalability.
 The new solution should provide the ability to scale Apache Spark cluster out and in as computing needs change.
@@ -13,7 +21,7 @@ The new solution should reduce the cost of managed services.
 
 ## Moving from EMR to EKS
 
-## EMR downside
+### EMR downside
 * Portability:After running for a while on AWS EMR, you can find yourself tightly coupled to AWS specific features. It can be something simple, like logging and monitoring and it can be more complicated like an auto-scaling mechanism, custom master/worker AMIs, AWS security features, etc
 * Cost overhead: the Amazon EMR price is in addition to the Amazon EC2 price.
 
